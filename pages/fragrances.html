@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="أفضل العطور والروائح الفاخرة - عطور عالمية براقة وجميلة">
+    <title>العطور والروائح - جمالك</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/categories.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <h1 class="logo">جمالك</h1>
+                <p class="tagline">عالم العناية بالبشرة والجمال</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">الرئيسية</a></li>
+                <li><a href="../index.html#categories">الأقسام</a></li>
+                <li><a href="../index.html#featured">المنتجات</a></li>
+                <li><a href="../index.html#contact">تواصل معنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Category Hero Section -->
+    <section class="category-hero">
+        <div class="hero-content">
+            <h2>العطور والروائح</h2>
+            <p>أرقى العطور الفاخرة برائحة فريدة وساحرة</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-controls">
+                <select id="sortSelect" onchange="sortProducts(this.value)" class="sort-select">
+                    <option value="default">ترتيب افتراضي</option>
+                    <option value="price-low">السعر: من الأقل للأعلى</option>
+                    <option value="price-high">السعر: من الأعلى للأقل</option>
+                    <option value="name">الاسم: أ-ي</option>
+                </select>
+                <input type="text" id="searchInput" placeholder="ابحثي عن منتج..." class="search-input">
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-grid" id="productsContainer">
+                <!-- سيتم تحميل المنتجات من خلال JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer Section -->
+    <section class="disclaimer-section">
+        <div class="container">
+            <div class="disclaimer-box">
+                <h3>ℹ️ معلومة مهمة</h3>
+                <p>نحن نساعدك في الوصول لأفضل العطور والروائح الفاخرة. عند الشراء يتم تحويلك للمتجر المعتمد والأصلي. كل الروابط آمنة وموثوقة.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>عن الموقع</h4>
+                    <p>موقع متخصص في عرض أفضل منتجات العناية بالبشرة والجمال من الماركات العالمية الموثوقة.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="../index.html">الرئيسية</a></li>
+                        <li><a href="../index.html#categories">الأقسام</a></li>
+                        <li><a href="../index.html#featured">المنتجات</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تابعينا</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" title="Instagram">📷 Instagram</a>
+                        <a href="https://facebook.com" target="_blank" title="Facebook">👍 Facebook</a>
+                        <a href="https://twitter.com" target="_blank" title="Twitter">🐦 Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 جمالك - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/products.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        // Display fragrances products
+        document.addEventListener('DOMContentLoaded', function() {
+            filterProducts('fragrances');
+        });
+    </script>
+</body>
+</html>
